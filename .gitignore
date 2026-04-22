@@ -1,0 +1,5 @@
+*.exe
+*.exe~
+./ambulance-api-service
+/ambulance-api-service
+.openapi.json
