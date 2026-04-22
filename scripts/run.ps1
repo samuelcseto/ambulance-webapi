@@ -30,6 +30,9 @@ switch ($command) {
     "mongo" {
         mongo up
     }
+    "test" {
+        go test -v ./...
+    }
     "openapi" {
         docker run --rm -v ${ProjectRoot}:/local openapitools/openapi-generator-cli:v6.6.0 generate -c /local/scripts/generator-cfg.yaml
     }
